@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="js/style.js" ></script>
+</head>
+<body>
+    <div class="container" >
+        <div class="piston-ctrl">
+            <a  class="btn" id="j">
+                Piston 1
+            </a>
+
+            <a  class="btn b-2" id="k">
+                Piston 2 
+            </a>
+
+            <a  class="btn b-3" id="l">
+                Piston 3
+            </a>
+        </div>
+
+        <div class="volume-ctrl"> 
+          <input type="range" min="0.0" max="0.1" step="0.001" value="0.05" id="vol" name="volume">
+          <a id="vo">VOLUME</a>
+        </div>
+
+        <div class="tone-ctrl">
+          <div id="disp">
+            <a  class="switch left" id="left">L</a>
+            <a id="tone">sawtooth</a>
+            <a  class="switch right" id="right">R</a>
+          </div>
+          <span id="ex-tone">tone slect</span>
+        </div>
+    </div>
+    <script src="js/sound.js" ></script>
+</body>
+</html>
